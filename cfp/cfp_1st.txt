@@ -87,7 +87,7 @@ TBA
 ## PROGRAM COMMITTEE
 
 - Takahito Aoto, Niigata Univeristy
-- Thiago Felicissimo, Laboratoire Méthodes Formelles
+- Thiago Felicissimo, INRIA
 - Carsten Fuhs, Birkbeck, University of London
 - Raúl Gutiérrez, Universitat Politècnica de València (co-chair)
 - Maja Hanne Kirkeby, Roskilde University
