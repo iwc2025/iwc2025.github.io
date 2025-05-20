@@ -1,0 +1,93 @@
+--//----//----//----//----//----//----//----//----//----//----//----//----//--
+
+ 
+Final Call For Papers
+ 
+14th International Workshop on Confluence
+https://iwc2025.github.io
+September 2-3, 2025, Leipzig, Germany
+ 
+ 
+--//----//----//----//----//----//----//----//----//----//----//----//----//--
+ 
+The 14th International Workshop on Confluence (IWC 2025), co-located
+with WST 2025, aims at promoting further research in confluence and
+related properties. Confluence provides a general notion of
+determinism and has always been conceived as one of the central
+properties of rewriting. In fact, confluence relates to many topics of
+rewriting and computation in general (completion, modularity,
+termination, commutation, etc.) and has been investigated in many
+formalisms of rewriting such as first-order rewriting, lambda-calculi,
+higher-order rewriting, constrained rewriting, conditional rewriting,
+etc. Recently there is a renewed interest in confluence research,
+resulting in new techniques, tool support, certification as well as
+new applications. The workshop aims at promoting further research in
+confluence and related properties.
+
+The 14th Confluence Competition CoCo 2025 will run live during IWC 2025.
+
+## TOPICS
+ 
+IWC 2025 encourages submissions in the following areas:
+ 
+- confluence and related properties:
+  unique normal forms, commutation, ground confluence
+- completion
+- critical pair criteria
+- decidability issues
+- complexity issues
+- certification
+- applications of confluence
+ 
+The objective of this workshop is to bring together theoreticians and
+practitioners to promote new techniques and results, and to facilitate
+feedback on the implementation and application of such techniques and
+results in practice. IWC 2025 also aims to be a forum for presenting
+and discussing work in progress, and therefore to provide feedback to
+authors on their preliminary research. More information can be found
+on the webpage of the conference:
+
+   https://iwc2025.github.io
+ 
+## SUBMISSIONS
+
+We solicit short papers or extended abstracts of at most 5 pages in
+EasyChair style, excluding references. There will be no formal
+reviewing. In particular, we welcome short versions of recently
+published articles and papers submitted elsewhere. The program
+committee checks relevance and may provide additional feedback. The
+accepted papers will be made available electronically before the
+workshop. Short papers or extended abstracts must be submitted
+electronically through the EasyChair system at:
+
+   https://easychair.org/conferences/?conf=iwc2025 
+
+EasyChair style:
+ 
+   http://easychair.org/publications/for_authors
+ 
+## IMPORTANT DATES
+ 
+- Title and Abstract:         June  1, 2025
+- Paper Submission:           June  1, 2025
+- Notification to authors:    June 31, 2025
+- Workshop date:              September 2-3, 2025
+
+## INVITED SPEAKERS
+ 
+Salvador Lucas, Universitat Politècnica de València
+
+## PROGRAM COMMITTEE
+
+- Takahito Aoto, Niigata Univeristy
+- Thiago Felicissimo, INRIA
+- Carsten Fuhs, Birkbeck, University of London
+- Raúl Gutiérrez, Universitat Politècnica de València (co-chair)
+- Maja Hanne Kirkeby, Roskilde University
+- Naoki Nishida, Nagoya University (co-chair)
+- René Thiemann, University of Innsbruck
+- Femke van Raamsdonk, Vrije Universiteit Amsterdam
+ 
+## CONTACT
+- Raúl Gutiérrez: raguti(at)upv.es
+- Naoki Nishida: nishida(at)i.nagoya-u.ac.jp
