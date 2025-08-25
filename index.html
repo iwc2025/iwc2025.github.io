@@ -199,9 +199,84 @@ Note that early registration ends on <b>July 23, 2025</b>.
     <!-- <b><font color="red">new!</font></b> -->
   </div>
   <b>Conway’s Game of Life and other orthogonal rewrite systems</b>
-  <p>
-    TBA
-  </p>
+  <details>
+    <summary>abstract <b><font color="red">new!</font></b></summary>
+    <p>
+      We show how Conway's Game of Life (GoL) can be modelled by means
+      of orthogonal graph rewriting. More precisely, we model GoL by
+      means of a graph rewrite system where each cell of the grid is
+      represented by a node having 8 ports, each linked to one of its
+      8 neighbouring nodes.
+      A rewrite rule then lets a node cyclically rotate its principal
+      port to the next (either widdershins or deosil) port while
+      updating its <em>alive-neighbour-count</em>.
+      After a full rotation, its state is updated accordingly. We show
+      this yields a graph rewrite system (GRS) where computing the
+      next GoL-iteration may be achieved in 8 ticks by means of what
+      we call <em>&#169;locksteps</em> better known in rewriting
+      as <em>full multisteps</em> contracting <em>all</em>
+      redex-patterns in the graph in parallel.
+      The GRS being <em>orthogonal</em> liberates one from <em>having
+      to</em> perform &#169;locksteps only, to always
+      contract <em>all</em> redex-patterns: orthogonality makes that
+      redex-patterns may be contracted asynchronously, even one at the
+      time, need not be contracted in <em>lockstep</em>. 
+      There are no <em>clogsteps</em> (so to speak), making the
+      modelling ideally suited for implementation on GPUs. 
+    </p>
+    <p>
+      In the second part of the presentation we show in what sense the
+      graph rewrite system used to model GoL in the first part
+      is <em>orthogonal</em>. 
+      We show it constitutes a so-called Interaction Net (IN) and that
+      a (single) step from graph G to graph H with respect to rule
+      rule &rho; : <var>L</var> &rarr; <var>R</var> can be decomposed
+      into three phases:
+      <ol>
+	<li>the <em>matching</em> phase, an
+	SC-expansion <var>G</var><sub>SC</sub>&Larr; <var>C</var>[<var>L</var>]
+	exhibiting the to-be-replaced substructure <var>L</var>
+	  within <var>G</var>;</li>
+	<li> the <em>replacement</em> <var>C</var>[<var>L</var>]
+	&rarr; <var>C</var>[<var>R</var>] of the exihibited
+	substructure <var>L</var>, left-hand side of rule &rho;, by
+	  its right-hand side <var>R</var>;</li>
+	<li> the <em>substitution</em> phase, an
+	SC-reduction <var>C</var>[<var>R</var>]
+	&Rarr;<sub>SC</sub> <var>H</var> plugging-in the
+	  substructure <var>R</var> yielding <var>H</var>.</li>
+      </ol>
+      Here SC stands for <em>Substitution Calculus</em>, the calculus
+      used for abstracting subgraphs into variables and substituting
+      for them again (matching and substitution).
+      In the case of INs the SC is particularly simple, and consists
+      essentially in managing <em>indirection</em> nodes. 
+      We exemplify this decomposition extends to term rewrite systems
+      (TRSs; having the simply typed
+      &lambda;&alpha;&beta;&eta;-calculus as SC) and to term graph
+      rewrite systems (TGRSs; having an SC, the &#x0436;-calculus,
+      based on sharing), putting INs on a par with orthogonal TRSs and
+      orthogonal TGRSs, thereby unlocking the theory of orthogonality
+      to GoL and other cellular automata. 
+      For instance, that INs are confluent, even has least
+      upperbounds, is an immediate consequence of orthogonality
+      (confluence-by-parallelism).
+    </p>
+    <p>
+      References: there being an abundance of literature on Game of
+      Life and on Interaction Nets, we only give references to the
+      lesser-known approach to structured rewriting by means of
+      Substitution Calculi: 
+      <a href="https://research.vu.nl/en/publications/confluence-for-abstract-and-higher-order-rewriting">van
+	Oostrom, PhD thesis, VUA, 1994</a>,
+      <a href="https://research.vu.nl/en/publications/confluence-and-normalisation-of-higher-order-rewriting">van
+	Raamsdonk, PhD thesis, VUA, 1996</a>,
+      <a href="https://doi.org/10.1007/978-3-030-29436-6_19">Hirokawa,
+	Nagele, van Oostrom, Oyamaguchi, CADE, 2019</a>,
+      <a href="http://www.javakade.nl/research/talk/horpresentation1407025.pdf">van
+      Oostrom, HOR, 2025</a>.
+    </p>
+  </details>
 
 </div>
 
@@ -308,7 +383,7 @@ See also <a href="https://www.imn.htwk-leipzig.de/~waldmann/WST2025/schedule/">I
     <tr>
       <td colspan="2" style="background-color:while;
 			     border-radius:3px">
-	<b>Session 2</b> (chair: TBA)
+	<b>Session 2</b> (chair: Carsten Fuhs)
       </td>
     </tr>
     <tr>
